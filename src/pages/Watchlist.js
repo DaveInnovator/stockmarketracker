@@ -63,7 +63,7 @@ const Watchlist = () => {
               </div>
               <button
                 onClick={() => removeFromWatchlist(quote['01. symbol'])}
-                className="text-red-400 hover:text-red-600 text-sm"
+                className="text-red-400 hover:text-red-600 text-sm cursor-pointer"
               >
                 Remove
               </button>

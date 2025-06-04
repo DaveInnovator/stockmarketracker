@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getStockQuote } from '../services/stockApi';
-import StockChatbot from '../components/StockChatbot';  // <-- import the chatbot component
+import StockChatbot from '../components/StockNewsFlash';  // <-- import the chatbot component
 
 const popularStocks = ['AAPL', 'GOOGL', 'AMZN', 'MSFT', 'TSLA'];
 
@@ -74,7 +74,7 @@ const Home = () => {
 
               <button
                 onClick={() => toggleWatchlist(quote['01. symbol'])}
-                className="ml-4 px-4 py-1 bg-yellow-500 hover:bg-yellow-600 text-black font-medium rounded"
+                className="ml-4 px-4 py-1 bg-yellow-500 hover:bg-yellow-600 cursor-pointer text-black font-medium rounded"
               >
                 {watchlist.includes(quote['01. symbol'])
                   ? 'Remove from Watchlist'

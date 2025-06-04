@@ -1,4 +1,4 @@
-const ALPHA_KEY = 'OE7Q2M190FO3L9B5'; // Replace with your real key
+const ALPHA_KEY = 'OE7Q2M190FO3L9B5'; 
 const FINNHUB_KEY = 'd0t3srhr01qid5qcjc20d0t3srhr01qid5qcjc2g';
 
 export const getStockQuote = async (symbol) => {
