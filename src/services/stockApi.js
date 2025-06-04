@@ -1,5 +1,5 @@
-const ALPHA_KEY = 'OE7Q2M190FO3L9B5'; 
-const FINNHUB_KEY = 'd0t3srhr01qid5qcjc20d0t3srhr01qid5qcjc2g';
+const ALPHA_KEY = process.env.REACT_APP_ALPHA_VANTAGE_KEY; 
+const FINNHUB_KEY = process.env.REACT_APP_FINNHUB_KEY;
 
 export const getStockQuote = async (symbol) => {
   try {
